@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commands Git</title>
+  </head>
+  <body>
+    <p>Пример тестового проекта</p>
+    <p>Для GitHub</p>
+    <ul>
+      <li>git clone path-to-repositiry - путь к репозиторию</li>
+      <li>git status - статус текущего локального репозитория</li>
+      <li>git add . - добавить все файлы в текущем репозитории</li>
+      <li>git commit -am "added new file index.html" - закоммитить изменения во всех файлах и дать им комментарии</li>
+      <li>git commit -m "added new file index.html" - закоммитить изменения из индекса и дать им комментарии</li>
+      <li>git push - отправить закоммиченные файлы в репозиторий на сервер</li>
+      <li>git pull - взять файлы из репозитория</li>
+      
+      <p>File change</p>
+      <p>Working directory</p>
+      <li>git checkout -- "file" - не сохранять изменение файла и вернуть состояние к последнему коммиту</li>
+      <li>git checkout -- . - не сохранять изменение файла и вернуть состояние к последнему коммиту</li>
+      <li>git clean -xdf - удалить новые добавленные файлы</li>
+      
+      <p>Stading Area(Index)</p>
+      <li>git reset -- "file" - убрать файл из индекса(STADING AREA), но отслеживать его</li>
+      <li>git rm -f index.html - принудительно удалить файл (стереть с диска)</li>
+      <li>git rm --cached index.html - удалить файл из индекса и не отслеживать его</li>
+      <li>git reset HEAD index.html- убрать файл из и откатить в Workong directory</li>
+
+      <p>Local branch(Commit)</p>
+      <li>git reset HEAD^^ (HEAD~2) - удалить коммит (~ + количество коммитов, либо ^^^)</li>
+      <li>git commit --amend - перезатереть последний коммит текущим</li>
+
+      <p>Remote repository</p>
+      <li>git revent "sha1"</li>
+      
+      <li>Future changes</li>
+    </ul>
+  </body>
+</html>
